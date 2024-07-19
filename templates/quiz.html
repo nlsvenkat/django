@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="quiz" method="POST">
+        {%csrf_token%}
+        <h2>Question 1: What is the full form of CSE</h2>
+        
+        <input type="radio" name="q1" val="o1" id="op1">
+        <h3><label for="op1">Computer Science Engineering</label></h3>
+        
+        <input type="radio" name="q1" val="o2" id="op2">
+        <h3><label for="op2">Computer Social Engineering</label></h3>
+
+        <input type="radio" name="q1" val="o3" id="op3">
+        <h3><label for="op3">Ceramic Science Engineering</label></h3>
+
+
+        <h2>Question 2: What is the full form of API</h2>
+        
+        <input type="radio" name="q2" val="o1" id="q2o1">
+        <h3><label for="q2o1">App Program Interest</label></h3>
+        
+        <input type="radio" name="q2" val="o2" id="q2o2">
+        <h3><label for="q2o2">Application Program Interface</label></h3>
+
+        <input type="radio" name="q2" val="o3" id="q2o3">
+        <h3><label for="q2o3">Atlantic Pillar of India</label></h3>
+        
+        <input type="submit" />
+
+    </form>
+    <h2>Your Score is {{score}}</h2>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+    <select name="operation" id="1">
+        <option value="a">addition</option>
+        <option value="s">subtraction</option>
+    </select>
+    <input type="text" name="num1"/>
+    
+    <input type="text" name="num2"/>
+    <input type="submit"/><br/>
+    Result is {{value}}
+    </form>
+
+</body>
+</html>
